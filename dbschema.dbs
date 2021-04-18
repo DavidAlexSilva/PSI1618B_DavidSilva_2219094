@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="PSI Paulo Matos" id="Project_15c2" database="SqlServer" >
+	<schema name="PSI Paulo Matos" >
+		<table name="Explicadores" >
+			<column name="reformados" type="nvarchar" length="2" jt="12" mandatory="y" />
+			<column name="Alunos Universitários" type="nvarchar" length="2" jt="12" />
+			<index name="Unq_Explicadores_reformados" unique="UNIQUE_KEY" >
+				<column name="reformados" />
+			</index>
+			<fk name="Fk_Explicadores_Matérias" to_schema="PSI Paulo Matos" to_table="Matérias" >
+				<fk_column name="reformados" pk="hora" />
+			</fk>
+		</table>
+		<table name="Login" >
+			<column name="login" type="int" jt="4" mandatory="y" />
+			<column name="aluno" type="nvarchar" length="2" jt="12" mandatory="y" />
+			<column name="explicadores" type="nvarchar" length="2" jt="12" mandatory="y" />
+			<index name="Pk_Login_login" unique="PRIMARY_KEY" >
+				<column name="login" />
+			</index>
+			<fk name="Fk_Login_Matérias" to_schema="PSI Paulo Matos" to_table="Matérias" >
+				<fk_column name="aluno" pk="hora" />
+			</fk>
+			<fk name="Fk_Login_Explicadores" to_schema="PSI Paulo Matos" to_table="Explicadores" >
+				<fk_column name="login" pk="reformados" />
+			</fk>
+		</table>
+		<table name="Matérias" >
+			<column name="hora" type="nvarchar" length="2" jt="12" mandatory="y" />
+			<column name="Dia" type="int" jt="4" mandatory="y" />
+			<column name="reformados" type="nvarchar" length="2" jt="12" mandatory="y" />
+			<index name="Unq_Matérias_hora" unique="UNIQUE_KEY" >
+				<column name="hora" />
+			</index>
+		</table>
+	</schema>
+	<connector name="SqlServer" database="SqlServer" url="jdbc:jtds:sqlserver://localhost:1433;user=;password=" host="localhost" port="1433" />
+	<layout name="Default Layout" id="Layout_1bb2" joined_routing="y" show_relation="columns" >
+		<entity schema="PSI Paulo Matos" name="Explicadores" color="EEC2C1" x="160" y="256" />
+		<entity schema="PSI Paulo Matos" name="Login" color="C1EED7" x="192" y="128" />
+		<entity schema="PSI Paulo Matos" name="Matérias" color="C1D8EE" x="176" y="352" />
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[DbSchema is disconnected from the database.
+New designed tables will be saved to project file and later can be create in any database.
+Right-click the layout to create new tables. Drop this callout from its context menu.]]></comment>
+		</callout>
+	</layout>
+</project>
