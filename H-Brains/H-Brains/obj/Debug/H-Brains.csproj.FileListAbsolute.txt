@@ -1,0 +1,10 @@
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\bin\Debug\H-Brains.exe.config
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\bin\Debug\H-Brains.exe
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\bin\Debug\H-Brains.pdb
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.csprojAssemblyReference.cache
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Login.resources
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Properties.Resources.resources
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.csproj.GenerateResource.cache
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.csproj.CoreCompileInputs.cache
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.exe
+C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.pdb
