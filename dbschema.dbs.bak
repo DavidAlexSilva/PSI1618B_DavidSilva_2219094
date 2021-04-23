@@ -4,9 +4,6 @@
 		<table name="Calendário" prior="Tbl" >
 			<column name="hora" type="datetime" jt="92" mandatory="y" />
 			<column name="dia" type="int" jt="4" mandatory="y" />
-			<index name="Unq_Calendário_hora" unique="UNIQUE_KEY" >
-				<column name="hora" />
-			</index>
 		</table>
 		<table name="Explicadores" >
 			<column name="idade" prior="reformados" type="int" length="2" jt="4" mandatory="y" />
@@ -15,12 +12,6 @@
 			<index name="Unq_Explicadores_reformados" unique="UNIQUE_KEY" >
 				<column name="idade" />
 			</index>
-			<fk name="fk_explicadores_alunos" to_schema="PSI Paulo Matos" to_table="alunos" >
-				<fk_column name="alunos" pk="explicadores" />
-			</fk>
-			<fk name="fk_explicadores_calendário" to_schema="PSI Paulo Matos" to_table="Calendário" >
-				<fk_column name="idade" pk="hora" />
-			</fk>
 		</table>
 		<table name="Login" >
 			<column name="login" type="int" jt="4" mandatory="y" />
@@ -38,21 +29,15 @@
 			<column name="disciplinas" prior="disciplinas2" type="nvarchar" length="2" jt="12" mandatory="y" />
 			<column name="idade" type="int" jt="4" mandatory="y" />
 			<column name="morada" type="nvarchar" length="2" jt="12" mandatory="y" />
-			<index name="Unq_alunos_explicadores" unique="UNIQUE_KEY" >
-				<column name="explicadores" />
-			</index>
-			<fk name="fk_alunos_calendário" to_schema="PSI Paulo Matos" to_table="Calendário" >
-				<fk_column name="explicadores" pk="hora" />
-			</fk>
 		</table>
 	</schema>
 	<connector name="SqlServer" database="SqlServer" url="jdbc:jtds:sqlserver://localhost:1433;user=;password=" host="localhost" port="1433" />
 	<layout name="Default Layout" id="Layout_1bb2" joined_routing="y" show_relation="columns" >
-		<entity schema="PSI Paulo Matos" name="Calendário" color="C1D8EE" x="224" y="416" />
-		<entity schema="PSI Paulo Matos" name="Explicadores" color="EEC2C1" x="368" y="224" />
-		<entity schema="PSI Paulo Matos" name="Login" color="C1EED7" x="160" y="128" />
-		<entity schema="PSI Paulo Matos" name="alunos" color="C1D8EE" x="80" y="256" />
-		<callout x="48" y="48" pointer="Round" >
+		<entity schema="PSI Paulo Matos" name="Calendário" color="C1D8EE" x="272" y="304" />
+		<entity schema="PSI Paulo Matos" name="Explicadores" color="EEC2C1" x="256" y="160" />
+		<entity schema="PSI Paulo Matos" name="Login" color="C1EED7" x="64" y="160" />
+		<entity schema="PSI Paulo Matos" name="alunos" color="C1D8EE" x="48" y="288" />
+		<callout x="96" y="48" pointer="Round" >
 			<comment><![CDATA[DbSchema is disconnected from the database.
 New designed tables will be saved to project file and later can be create in any database.
 Right-click the layout to create new tables. Drop this callout from its context menu.]]></comment>
