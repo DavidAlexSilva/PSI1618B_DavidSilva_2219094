@@ -16,6 +16,12 @@ namespace H_Brains
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            var login = new Login();
+            if (login.ShowDialog()!=DialogResult.OK) 
+            {
+                return;
+            
+            }
             Application.Run(new Login());
         }
     }
