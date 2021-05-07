@@ -19,3 +19,24 @@ C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\
 C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form10.resources
 C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form11.resources
 C:\Users\2219094\Documents\GitHub\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form12.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\bin\Debug\H-Brains.exe.config
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\bin\Debug\H-Brains.exe
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\bin\Debug\H-Brains.pdb
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.csprojAssemblyReference.cache
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Login.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form10.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form11.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form12.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form2.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form3.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form4.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form5.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form6.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form7.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form8.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Form9.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H_Brains.Properties.Resources.resources
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.csproj.GenerateResource.cache
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.exe
+C:\Users\Utilizador\source\repos\DavidAlexSilva\PSI1619I_ DavidSilva_2219094_PreProjeto\PSI1619I_DavidSilva_2219094\H-Brains\H-Brains\obj\Debug\H-Brains.pdb
