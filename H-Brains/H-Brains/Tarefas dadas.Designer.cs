@@ -58,6 +58,7 @@ namespace H_Brains
             this.label6 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel2.SuspendLayout();
@@ -78,11 +79,13 @@ namespace H_Brains
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.pictureBox12);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.panel2);
@@ -106,6 +109,7 @@ namespace H_Brains
             // pictureBox11
             // 
             this.pictureBox11.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(3, 3);
             this.pictureBox11.Name = "pictureBox11";
@@ -194,6 +198,7 @@ namespace H_Brains
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 184);
             this.pictureBox1.Name = "pictureBox1";
@@ -205,6 +210,7 @@ namespace H_Brains
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(12, 253);
             this.pictureBox7.Name = "pictureBox7";
@@ -217,6 +223,7 @@ namespace H_Brains
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(12, 57);
             this.pictureBox8.Name = "pictureBox8";
@@ -228,6 +235,7 @@ namespace H_Brains
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(12, 331);
             this.pictureBox9.Name = "pictureBox9";
@@ -241,6 +249,7 @@ namespace H_Brains
             // 
             this.pictureBox10.BackColor = System.Drawing.SystemColors.Highlight;
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(12, 117);
             this.pictureBox10.Name = "pictureBox10";
@@ -270,6 +279,7 @@ namespace H_Brains
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(21, 40);
             this.label2.Name = "label2";
@@ -289,6 +299,7 @@ namespace H_Brains
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 35);
             this.label3.Name = "label3";
@@ -308,6 +319,7 @@ namespace H_Brains
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(3, 33);
             this.label4.Name = "label4";
@@ -327,6 +339,7 @@ namespace H_Brains
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(25, 30);
             this.label5.Name = "label5";
@@ -346,6 +359,7 @@ namespace H_Brains
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(35, 36);
             this.label6.Name = "label6";
@@ -365,6 +379,7 @@ namespace H_Brains
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 30);
             this.label7.Name = "label7";
@@ -372,6 +387,18 @@ namespace H_Brains
             this.label7.TabIndex = 0;
             this.label7.Text = "Francês";
             this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(725, 24);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(64, 34);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 7;
+            this.pictureBox12.TabStop = false;
             // 
             // Form3
             // 
@@ -418,6 +445,7 @@ namespace H_Brains
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,5 +481,6 @@ namespace H_Brains
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }

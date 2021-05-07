@@ -10,21 +10,36 @@ using System.Windows.Forms;
 
 namespace H_Brains
 {
-    public partial class Form6 : Form
+    public partial class Form2 : Form
     {
-        public Form6()
+        public Form2()
         {
             InitializeComponent();
         }
 
+        private void Tabela_Materias_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Materias_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Aluno.DataGridView.Rows.Add("");
+        }
+
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             new Form3().Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -37,20 +52,12 @@ namespace H_Brains
             new Form5().Show();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             new Form12().Show();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-             Console.Write(textBox1);
-
-        }
+        
+       
     }
 }

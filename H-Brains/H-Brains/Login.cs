@@ -78,7 +78,30 @@ namespace H_Brains
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            int res;
+            Application.EnableVisualStyles();
+           /* Application.SetCompatibleTextRenderingDefault();*/
+            res = Convert.ToInt32(MessageBox.Show("Continuar","Mensagem",MessageBoxButtons.YesNo,MessageBoxIcon.Question));
+
+            if (res==1) 
+            {
+                MessageBox.Show("SIM", "Mensagem",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                
+                
+                 
+           
+                
+            } 
+            
+            else 
+            { }
+            if (res == 2) 
+             {
+             MessageBox.Show("NAO","Mensagem", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+             new Login().Show();
+            }
             Application.Exit();
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
