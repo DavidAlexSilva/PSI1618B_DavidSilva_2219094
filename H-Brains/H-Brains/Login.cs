@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace H_Brains
 {
@@ -32,8 +34,15 @@ namespace H_Brains
 
         }
 
+        private static MySqlConnection dbo = new MySqlConnection();
+
         private void Login_Load(object sender, EventArgs e)
         {
+
+            MySqlCommand dbo = new MySqlCommand();
+            MySqlConnection mySqlConnection = new MySqlConnection(); 
+
+            
 
         }
 
@@ -42,6 +51,20 @@ namespace H_Brains
             textBox1.Text = "";
             textBox1.PasswordChar = '*';
             textBox1.MaxLength = 10;
+           
+        } 
+        
+        
+        
+        
+        
+        private static void Log()
+        {
+                Console.Clear();
+                Console.WriteLine("Login");
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Parameters.Add("");
+
         }
 
         private void button1_Click(object sender, EventArgs e) 

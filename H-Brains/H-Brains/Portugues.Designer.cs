@@ -175,7 +175,7 @@ namespace H_Brains
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 107);
+            this.textBox1.Location = new System.Drawing.Point(105, 106);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(683, 331);
