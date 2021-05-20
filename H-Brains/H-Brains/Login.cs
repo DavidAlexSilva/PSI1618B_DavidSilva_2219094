@@ -103,8 +103,9 @@ namespace H_Brains
         {
             int res;
             Application.EnableVisualStyles();
-           /* Application.SetCompatibleTextRenderingDefault();*/
-            res = Convert.ToInt32(MessageBox.Show("Continuar","Mensagem",MessageBoxButtons.YesNo,MessageBoxIcon.Question));
+            /*Application.SetCompatibleTextRenderingDefault();*/
+            res = Convert.ToInt32(MessageBox.Show("Continuar","Mensagem",MessageBoxButtons.YesNo));
+            
 
             if (res==1) 
             {
@@ -120,8 +121,8 @@ namespace H_Brains
             { }
             if (res == 2) 
              {
-             MessageBox.Show("NAO","Mensagem", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-             new Login().Show();
+             MessageBox.Show("NAO","Mensagem", MessageBoxButtons.RetryCancel, MessageBoxIcon.Information);
+             
             }
             Application.Exit();
             
