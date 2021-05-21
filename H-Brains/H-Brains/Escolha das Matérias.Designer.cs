@@ -29,7 +29,6 @@ namespace H_Brains
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -38,14 +37,10 @@ namespace H_Brains
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Materias = new System.Windows.Forms.DataGridView();
-            this.Aluno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Professor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Matérias = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.form2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Tabela_Materias = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -53,10 +48,9 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Materias)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.form2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tabela_Materias)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -145,6 +139,18 @@ namespace H_Brains
             this.panel1.Size = new System.Drawing.Size(800, 72);
             this.panel1.TabIndex = 2;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(724, 23);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(64, 34);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Highlight;
@@ -170,49 +176,17 @@ namespace H_Brains
             this.label1.Text = "Escolha das Matérias com mais dificuldades\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Materias
+            // Tabela_Materias
             // 
-            this.Materias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Materias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Aluno,
-            this.Professor,
-            this.Matérias});
-            this.Materias.Location = new System.Drawing.Point(99, 79);
-            this.Materias.Name = "Materias";
-            this.Materias.Size = new System.Drawing.Size(343, 46);
-            this.Materias.TabIndex = 3;
-            this.Materias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Materias_CellContentClick);
-            // 
-            // Aluno
-            // 
-            this.Aluno.HeaderText = "Aluno";
-            this.Aluno.Name = "Aluno";
-            // 
-            // Professor
-            // 
-            this.Professor.HeaderText = "Professor";
-            this.Professor.Name = "Professor";
-            // 
-            // Matérias
-            // 
-            this.Matérias.HeaderText = "Matérias";
-            this.Matérias.Name = "Matérias";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(724, 23);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(64, 34);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
-            // 
-            // form2BindingSource
-            // 
-            this.form2BindingSource.DataSource = typeof(H_Brains.Form2);
+            this.Tabela_Materias.AllowUserToAddRows = false;
+            this.Tabela_Materias.AllowUserToDeleteRows = false;
+            this.Tabela_Materias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Tabela_Materias.Location = new System.Drawing.Point(99, 79);
+            this.Tabela_Materias.Name = "Tabela_Materias";
+            this.Tabela_Materias.ReadOnly = true;
+            this.Tabela_Materias.Size = new System.Drawing.Size(343, 161);
+            this.Tabela_Materias.TabIndex = 3;
+            this.Tabela_Materias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Materias_CellContentClick);
             // 
             // Form2
             // 
@@ -220,11 +194,12 @@ namespace H_Brains
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Materias);
+            this.Controls.Add(this.Tabela_Materias);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Form2";
             this.Text = "Escolha das Matérias";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -233,10 +208,9 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Materias)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.form2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tabela_Materias)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,11 +218,7 @@ namespace H_Brains
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView Materias;
-        private System.Windows.Forms.BindingSource form2BindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Aluno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Professor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Matérias;
+        private System.Windows.Forms.DataGridView Tabela_Materias;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox6;
