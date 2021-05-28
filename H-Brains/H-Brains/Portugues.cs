@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -74,9 +76,6 @@ namespace H_Brains
     
     private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Login login = new Login();
-            new Form6.Login();
-
             
 
 
@@ -90,6 +89,16 @@ namespace H_Brains
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Enviar_Click(object sender, EventArgs e)
+        {
+            SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            Conn.Open();
+            SqlCommand Comando = new SqlCommand();
+            Comando.Connection = Conn;
+            Comando.CommandText = "@insert into Tarefas(AlunoID,MateriaId,Texto) values(21,25,'Tarefa para esta noite ler pg 2 Manuel de Portugues')";
+
         }
     }
 }

@@ -27,6 +27,10 @@ insert into Tarefas(AlunoID,MateriaId)
 values(23,30)
 insert into Tarefas(AlunoID,MateriaId)
 values(24,28)
+insert into Tarefas(AlunoID,MateriaId)
+values(25,27)
+insert into Tarefas(AlunoID,MateriaId)
+values(26,29)
  delete  from Tarefas
 select 
 MateriaId,

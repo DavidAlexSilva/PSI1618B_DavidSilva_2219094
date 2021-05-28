@@ -41,6 +41,7 @@ namespace H_Brains
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Enviar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -175,18 +176,29 @@ namespace H_Brains
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 106);
+            this.textBox1.Location = new System.Drawing.Point(100, 106);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(683, 331);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // Enviar
+            // 
+            this.Enviar.Location = new System.Drawing.Point(651, 390);
+            this.Enviar.Name = "Enviar";
+            this.Enviar.Size = new System.Drawing.Size(122, 36);
+            this.Enviar.TabIndex = 7;
+            this.Enviar.Text = "Enviar\r\n";
+            this.Enviar.UseVisualStyleBackColor = true;
+            this.Enviar.Click += new System.EventHandler(this.Enviar_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Enviar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -220,5 +232,6 @@ namespace H_Brains
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Button Enviar;
     }
 }
