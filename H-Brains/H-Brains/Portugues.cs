@@ -100,5 +100,10 @@ namespace H_Brains
             Comando.CommandText = "@insert into Tarefas(AlunoID,MateriaId,Texto) values(21,25,'Tarefa para esta noite ler pg 2 Manuel de Portugues')";
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
