@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -68,34 +69,19 @@ namespace H_Brains
 
         private void button1_Click(object sender, EventArgs e) 
         {
-            if (Utilizador.Text == "explicador") 
-            {
-                if (Password.Text == "Hbrains") 
-                {
-                 new Form2().ShowDialog();
-                 this.Hide();    
-                }
-                else 
-                {
-                    MessageBox.Show("ERRO");
-                }
-            }
-            if (Utilizador.Text == "H_Tiago") 
-            {
-                if (Password.Text=="Hbrains") 
-                {
-                    new Form2().ShowDialog();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("ERRO");
-                }
-            }
-            /*else
-            {
-                MessageBox.Show("ERRO");
-            }*/
+            SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            Conn.Open();
+            SqlCommand Comando = new SqlCommand();
+            Comando.Connection = Conn;
+            Comando.CommandText = @"
+                select * from Login
+                where log=@username and pass=@pass
+                ";
+            Comando.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
+            Comando.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
+
+            int result = Comando.ExecuteNonQuery();
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

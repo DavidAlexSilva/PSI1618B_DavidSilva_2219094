@@ -66,12 +66,11 @@ namespace H_Brains
             Cien.Open();
             SqlCommand Comando = new SqlCommand();
             Comando.Connection = Cien;
-            Comando.CommandText = @"
-	SELECT TOP (1000) [TarefaID]
-      ,[AlunoID]
-      ,[MateriaId]
-      ,[Data]
-      ,[Texto]
+            Comando.CommandText = @"SELECT TOP (1000) [TarefaID]
+,[AlunoID] 
+,[MateriaId]
+,[Data]
+ ,[Texto]
   FROM [PSIM1619I_DavidSilva_2219094].[dbo].[Tarefas]
   where TarefaID = 68";
             DataTable ci = new DataTable();

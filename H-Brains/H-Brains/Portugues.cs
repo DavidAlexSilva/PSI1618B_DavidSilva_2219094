@@ -76,14 +76,7 @@ namespace H_Brains
     
     private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
-
-
-
-
-
-
-
+ 
         }
         
         private void pictureBox12_Click(object sender, EventArgs e)
