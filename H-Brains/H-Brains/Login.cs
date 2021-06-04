@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
-using MySql.Data.MySqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace H_Brains
 {
@@ -34,13 +33,13 @@ namespace H_Brains
 
         }
 
-        private static MySqlConnection dbo = new MySqlConnection();
+        private static SqlConnection dbo = new SqlConnection();
 
         private void Login_Load(object sender, EventArgs e)
         {
 
             MySqlCommand dbo = new MySqlCommand();
-            MySqlConnection mySqlConnection = new MySqlConnection(); 
+            
 
             
 
@@ -62,7 +61,7 @@ namespace H_Brains
         {
                 Console.Clear();
                 Console.WriteLine("Login");
-            MySqlCommand cmd = new MySqlCommand();
+            SqlCommand cmd = new SqlCommand();
             cmd.Parameters.Add("");
 
         }
@@ -136,6 +135,10 @@ namespace H_Brains
         private void Password_TextChanged(object sender, EventArgs e)
         {
         
+        }
+
+        private class MySqlCommand
+        {
         }
     }
 }
