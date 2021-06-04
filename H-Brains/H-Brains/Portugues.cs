@@ -97,13 +97,33 @@ namespace H_Brains
             Conn.Open();
             SqlCommand Comando = new SqlCommand();
             Comando.Connection = Conn;
-            Comando.CommandText = "@insert into Tarefas(AlunoID,MateriaId,Texto) values(21,25,'Tarefa para esta noite ler pg 2 Manuel de Portugues')";
-
+            Comando.CommandText = @"SELECT TOP (1000) [TarefaID]
+      ,[AlunoID]
+      ,[MateriaId]
+      ,[Data]
+      ,[Texto]
+            FROM[PSIM1619I_DavidSilva_2219094].[dbo].[Tarefas]
+    where TarefaID = 72";
+            DataTable dw = new DataTable();
+            using (SqlDataReader reader = Comando.ExecuteReader()) 
+            {
+                dw.Load(reader);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

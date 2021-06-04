@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -45,6 +47,28 @@ namespace H_Brains
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             new Form12().Show();
+        }
+
+        private void Form10_Load(object sender, EventArgs e)
+        {
+            SqlConnection FQS = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            FQS.Open();
+            SqlCommand Comando = new SqlCommand();
+            Comando.Connection = FQS;
+            Comando.CommandText = @"	SELECT TOP (1000) [TarefaID]
+      ,[AlunoID]
+      ,[MateriaId]
+      ,[Data]
+      ,[Texto]
+  FROM [PSIM1619I_DavidSilva_2219094].[dbo].[Tarefas]
+  where TarefaID = 75";
+            DataTable fq = new DataTable();
+            using(SqlDataReader reader = Comando.ExecuteReader()) 
+            {
+                fq.Load(reader);
+            }
+
+
         }
     }
 }

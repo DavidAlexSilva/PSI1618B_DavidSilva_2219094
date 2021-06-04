@@ -181,6 +181,7 @@ namespace H_Brains
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(683, 331);
             this.textBox1.TabIndex = 6;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
@@ -191,6 +192,7 @@ namespace H_Brains
             this.button2.TabIndex = 8;
             this.button2.Text = "Enviar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form6
             // 
@@ -204,6 +206,7 @@ namespace H_Brains
             this.Controls.Add(this.panel1);
             this.Name = "Form6";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
