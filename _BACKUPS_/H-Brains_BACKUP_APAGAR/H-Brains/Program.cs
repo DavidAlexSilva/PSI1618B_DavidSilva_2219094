@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
-using System.Data;
-using MySql.Data.MySqlClient;
 
 namespace H_Brains
 {
@@ -30,7 +26,7 @@ namespace H_Brains
             
             
         private static string _connectionString ="Server=127.0.0.1;Database=logins;Uid=root;Pwd=root";
-        private static MySqlConnection db = new MySqlConnection(_connectionString);
+        private static SqlConnection db = new SqlConnection(_connectionString);
         private static void Login() 
         {
             Console.Clear();

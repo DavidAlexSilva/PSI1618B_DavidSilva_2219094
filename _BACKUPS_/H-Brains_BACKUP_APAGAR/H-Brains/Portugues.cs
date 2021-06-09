@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -74,22 +76,47 @@ namespace H_Brains
     
     private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Login login = new Login();
-            new Form6.Login();
-
-            
-
-
-
-
-
-
-
+ 
         }
         
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Enviar_Click(object sender, EventArgs e)
+        {
+            SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            Conn.Open();
+            SqlCommand Comando = new SqlCommand();
+            Comando.Connection = Conn;
+            Comando.CommandText = @"SELECT TOP (1000) [TarefaID]
+      ,[AlunoID]
+      ,[MateriaId]
+      ,[Data]
+      ,[Texto]
+            FROM[PSIM1619I_DavidSilva_2219094].[dbo].[Tarefas]
+    where TarefaID = 72";
+            DataTable dw = new DataTable();
+            using (SqlDataReader reader = Comando.ExecuteReader()) 
+            {
+                dw.Load(reader);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

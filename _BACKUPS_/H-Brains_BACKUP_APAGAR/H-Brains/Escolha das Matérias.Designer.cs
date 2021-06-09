@@ -180,11 +180,12 @@ namespace H_Brains
             // 
             this.Tabela_Materias.AllowUserToAddRows = false;
             this.Tabela_Materias.AllowUserToDeleteRows = false;
+            this.Tabela_Materias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Tabela_Materias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Tabela_Materias.Location = new System.Drawing.Point(99, 79);
             this.Tabela_Materias.Name = "Tabela_Materias";
             this.Tabela_Materias.ReadOnly = true;
-            this.Tabela_Materias.Size = new System.Drawing.Size(363, 149);
+            this.Tabela_Materias.Size = new System.Drawing.Size(689, 246);
             this.Tabela_Materias.TabIndex = 3;
             this.Tabela_Materias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Materias_CellContentClick);
             // 

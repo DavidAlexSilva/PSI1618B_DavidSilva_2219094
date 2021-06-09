@@ -19,14 +19,20 @@ values('Ingles',6)
 delete from Materias
 
 select * from Tarefas
-insert into Tarefas(AlunoID,MateriaId)
-values(21,25)
+
+insert into Tarefas(AlunoID,MateriaId,Texto)
+values(21,25,'Tarefa para esta noite ler pg 2 Manuel de Portugues')
+
 insert into Tarefas(AlunoID,MateriaId)
 values(22,26)
 insert into Tarefas(AlunoID,MateriaId)
 values(23,30)
 insert into Tarefas(AlunoID,MateriaId)
 values(24,28)
+insert into Tarefas(AlunoID,MateriaId)
+values(25,27)
+insert into Tarefas(AlunoID,MateriaId)
+values(26,29)
  delete  from Tarefas
 select 
 MateriaId,
