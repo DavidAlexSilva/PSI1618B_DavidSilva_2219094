@@ -57,15 +57,6 @@ namespace H_Brains
         
         
         
-        
-        private static void Log()
-        {
-                Console.Clear();
-                Console.WriteLine("Login");
-            SqlCommand cmd = new SqlCommand();
-            cmd.Parameters.Add("");
-
-        }
 
         private void button1_Click(object sender, EventArgs e) 
         {
@@ -79,12 +70,19 @@ namespace H_Brains
                 ";
             Comando.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
             Comando.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
+            int result=Comando.ExecuteNonQuery();
+            if (result == 0) 
+            {
+                MessageBox.Show("LOGIN INCORRETO");
+                return;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
 
-            int result = Comando.ExecuteNonQuery();
-            //if (Utilizador.Text == 1) 
-            //{
-            
-            //}
+            }
+
+           
 
             
         }

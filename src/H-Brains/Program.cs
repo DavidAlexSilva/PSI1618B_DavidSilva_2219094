@@ -20,20 +20,11 @@ namespace H_Brains
                 return;
 
             }
-            Application.Run(new Login());
+            Application.Run(new Form2());
         }
             
             
             
-        private static string _connectionString ="Server=127.0.0.1;Database=logins;Uid=root;Pwd=root";
-        private static SqlConnection db = new SqlConnection(_connectionString);
-        private static void Login() 
-        {
-            Console.Clear();
-            Console.WriteLine("Login");
-
-        
-        }
-    
+       
     }
 }
