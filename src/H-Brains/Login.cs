@@ -82,9 +82,30 @@ namespace H_Brains
 
             }
 
-           
+            SqlConnection Conne = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            Conn.Open();
+            SqlCommand Comand = new SqlCommand();
+            Comando.Connection = Conn;
+            Comando.CommandText = @"
+                select * from Login
+                where log=@username and pass=@pass
+                ";
+            Comando.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
+            Comando.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
+            int Result = Comando.ExecuteNonQuery();
+            if (result == 1)
+            {
+                MessageBox.Show("LOGIN INCORRETO");
+                return;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
 
-            
+            }
+
+
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
