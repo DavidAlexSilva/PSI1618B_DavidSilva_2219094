@@ -175,6 +175,7 @@ namespace H_Brains
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(127, 123);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -189,6 +190,7 @@ namespace H_Brains
             this.button2.TabIndex = 11;
             this.button2.Text = "Enviar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form11
             // 

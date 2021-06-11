@@ -70,5 +70,25 @@ namespace H_Brains
             }
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection Tare = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            Tare.Open();
+            SqlCommand ComIng = new SqlCommand();
+            ComIng.Connection = Tare;
+            ComIng.CommandText = @"   select * from Tarefas
+  where TarefaID=69
+                                       
+  ";
+            DataTable ig = new DataTable();
+            using (SqlDataReader reader = ComIng.ExecuteReader())
+            {
+                ig.Load(reader);
+            }
+            textBox1.Text = ig.Rows[0]["Texto"].ToString();
+
+        }
     }
 }
+

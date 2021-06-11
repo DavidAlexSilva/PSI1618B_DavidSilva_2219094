@@ -101,5 +101,10 @@ namespace H_Brains
         {
             new Form12().Show();
         }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new verificacao_contas();
+        }
     }
 }

@@ -57,7 +57,23 @@ namespace H_Brains
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            SqlConnection CN = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            CN.Open();
+            SqlCommand Comando = new SqlCommand();
+            Comando.Connection = CN;
+            Comando.CommandText = @"   select * from Tarefas
+  where MateriaId=27";
+            DataTable cin = new DataTable();
+            using (SqlDataReader reader = Comando.ExecuteReader())
+            {
+                cin.Load(reader);
+
+            }
+            foreach (DataRow dr in cin.Rows  ) 
+            {
+                
+            textBox1.Text =dr["Texto"].ToString()+"\n";
+            }
         }
 
         private void Form8_Load(object sender, EventArgs e)

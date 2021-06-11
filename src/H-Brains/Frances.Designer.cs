@@ -42,6 +42,7 @@ namespace H_Brains
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +52,7 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,6 +93,7 @@ namespace H_Brains
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.pictureBox13);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.pictureBox8);
@@ -166,6 +169,7 @@ namespace H_Brains
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(105, 107);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -191,6 +195,20 @@ namespace H_Brains
             this.button2.TabIndex = 9;
             this.button2.Text = "Enviar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 45);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 10;
+            this.pictureBox13.TabStop = false;
             // 
             // Form9
             // 
@@ -214,6 +232,7 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +252,6 @@ namespace H_Brains
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }
