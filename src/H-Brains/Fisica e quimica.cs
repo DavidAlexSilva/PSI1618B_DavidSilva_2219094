@@ -63,12 +63,35 @@ namespace H_Brains
   FROM [PSIM1619I_DavidSilva_2219094].[dbo].[Tarefas]
   where TarefaID = 75";
             DataTable fq = new DataTable();
-            using(SqlDataReader reader = Comando.ExecuteReader()) 
+            using (SqlDataReader reader = Comando.ExecuteReader())
             {
                 fq.Load(reader);
             }
 
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            SqlConnection Tare = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            Tare.Open();
+            SqlCommand ComFisQ = new SqlCommand();
+            ComFisQ.Connection = Tare;
+            ComFisQ.CommandText = @"
+                                       
+   select * from Tarefas
+  where TarefaID=75";
+            DataTable fq = new DataTable();
+            using (SqlDataReader reader = ComFisQ.ExecuteReader())
+            {
+                fq.Load(reader);
+            }
+            textBox1.Text = fq.Rows[0]["Texto"].ToString();
         }
     }
 }
