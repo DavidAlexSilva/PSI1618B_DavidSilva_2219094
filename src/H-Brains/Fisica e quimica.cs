@@ -73,11 +73,7 @@ namespace H_Brains
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-        }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
             SqlConnection Tare = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
             Tare.Open();
             SqlCommand ComFisQ = new SqlCommand();
@@ -92,6 +88,18 @@ namespace H_Brains
                 fq.Load(reader);
             }
             textBox1.Text = fq.Rows[0]["Texto"].ToString();
+
+        }
+
+        private void ButtonFQClick(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new vericacao().Show();
         }
     }
 }

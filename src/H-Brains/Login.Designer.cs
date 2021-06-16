@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace H_Brains
 {
     partial class Login
@@ -52,7 +54,7 @@ namespace H_Brains
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Swis721 BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(90, 432);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.button1.Name = "button1";
@@ -71,7 +73,7 @@ namespace H_Brains
             this.textBox1.Location = new System.Drawing.Point(-242, 351);
             this.textBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 30);
+            this.textBox1.Size = new System.Drawing.Size(104, 29);
             this.textBox1.TabIndex = 1;
             // 
             // Utilizador
@@ -79,7 +81,7 @@ namespace H_Brains
             this.Utilizador.Location = new System.Drawing.Point(90, 239);
             this.Utilizador.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Utilizador.Name = "Utilizador";
-            this.Utilizador.Size = new System.Drawing.Size(254, 30);
+            this.Utilizador.Size = new System.Drawing.Size(254, 29);
             this.Utilizador.TabIndex = 2;
             this.Utilizador.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -122,7 +124,7 @@ namespace H_Brains
             this.Password.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Password.Name = "Password";
             this.Password.PasswordChar = '*';
-            this.Password.Size = new System.Drawing.Size(254, 30);
+            this.Password.Size = new System.Drawing.Size(254, 29);
             this.Password.TabIndex = 12;
             this.Password.TextChanged += new System.EventHandler(this.Password_TextChanged);
             // 
@@ -150,10 +152,10 @@ namespace H_Brains
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Monospac821 BT", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(218, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 29);
+            this.label1.Size = new System.Drawing.Size(134, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "H-BRAINS";
             // 
@@ -171,7 +173,7 @@ namespace H_Brains
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -184,10 +186,12 @@ namespace H_Brains
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Monospac821 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Login";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -201,6 +205,16 @@ namespace H_Brains
             this.PerformLayout();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          
+            new Form2().ShowDialog();  
+            
+            new Login().Close();
+        }
+
+       
 
         #endregion
 

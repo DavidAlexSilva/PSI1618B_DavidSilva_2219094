@@ -34,6 +34,7 @@ namespace H_Brains
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -41,11 +42,12 @@ namespace H_Brains
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonFq = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -91,6 +93,7 @@ namespace H_Brains
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.pictureBox13);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.pictureBox8);
@@ -100,6 +103,19 @@ namespace H_Brains
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(93, 385);
             this.panel3.TabIndex = 7;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(12, 7);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 45);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 11;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox2
             // 
@@ -175,39 +191,42 @@ namespace H_Brains
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(122, 122);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(661, 316);
             this.textBox1.TabIndex = 9;
             // 
-            // button2
+            // buttonFq
             // 
-            this.button2.Location = new System.Drawing.Point(628, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 33);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Enviar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.buttonFq.Location = new System.Drawing.Point(628, 396);
+            this.buttonFq.Name = "buttonFq";
+            this.buttonFq.Size = new System.Drawing.Size(132, 33);
+            this.buttonFq.TabIndex = 10;
+            this.buttonFq.Text = "Ver Tarefa";
+            this.buttonFq.UseVisualStyleBackColor = true;
+            this.buttonFq.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonFq);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "Form10";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form10";
             this.Load += new System.EventHandler(this.Form10_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -231,6 +250,7 @@ namespace H_Brains
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonFq;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

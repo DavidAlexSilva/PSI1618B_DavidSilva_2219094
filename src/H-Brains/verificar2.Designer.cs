@@ -1,7 +1,7 @@
 ﻿
 namespace H_Brains
 {
-    partial class verificacao_contas
+    partial class vericar2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace H_Brains
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(verificacao_contas));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vericar2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -40,6 +40,7 @@ namespace H_Brains
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -47,7 +48,8 @@ namespace H_Brains
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.Tabela_Materias = new System.Windows.Forms.DataGridView();
+            this.Verificacao_explic = new System.Windows.Forms.DataGridView();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -64,7 +66,8 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Tabela_Materias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Verificacao_explic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,7 +77,7 @@ namespace H_Brains
             this.panel1.Controls.Add(this.pictureBox12);
             this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(803, 72);
             this.panel1.TabIndex = 4;
@@ -82,13 +85,13 @@ namespace H_Brains
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Console", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MV Boli", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.label1.Location = new System.Drawing.Point(212, 24);
+            this.label1.Location = new System.Drawing.Point(257, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(409, 29);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Verificação das Contas";
+            this.label1.Size = new System.Drawing.Size(309, 39);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Verificação da Conta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox12
@@ -179,6 +182,19 @@ namespace H_Brains
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("MV Boli", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(111, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(276, 62);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Explicadores:\r\nInformações e Contas";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
@@ -188,10 +204,10 @@ namespace H_Brains
             this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Controls.Add(this.pictureBox9);
             this.panel3.Controls.Add(this.pictureBox10);
-            this.panel3.Location = new System.Drawing.Point(1, 73);
+            this.panel3.Location = new System.Drawing.Point(0, 72);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(93, 378);
-            this.panel3.TabIndex = 5;
+            this.panel3.Size = new System.Drawing.Size(93, 390);
+            this.panel3.TabIndex = 16;
             // 
             // pictureBox13
             // 
@@ -199,18 +215,18 @@ namespace H_Brains
             this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(11, 6);
+            this.pictureBox13.Location = new System.Drawing.Point(12, 6);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(64, 45);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 6;
+            this.pictureBox13.TabIndex = 9;
             this.pictureBox13.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 190);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 184);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -222,7 +238,7 @@ namespace H_Brains
             // 
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(11, 264);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 253);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(64, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +251,7 @@ namespace H_Brains
             this.pictureBox8.BackColor = System.Drawing.SystemColors.Highlight;
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(12, 63);
+            this.pictureBox8.Location = new System.Drawing.Point(12, 57);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(64, 45);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -257,10 +273,9 @@ namespace H_Brains
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.SystemColors.Highlight;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(11, 129);
+            this.pictureBox10.Location = new System.Drawing.Point(12, 117);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(64, 46);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -268,29 +283,45 @@ namespace H_Brains
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // Tabela_Materias
+            // Verificacao_explic
             // 
-            this.Tabela_Materias.AllowUserToAddRows = false;
-            this.Tabela_Materias.AllowUserToDeleteRows = false;
-            this.Tabela_Materias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.Tabela_Materias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabela_Materias.Location = new System.Drawing.Point(101, 79);
-            this.Tabela_Materias.Name = "Tabela_Materias";
-            this.Tabela_Materias.ReadOnly = true;
-            this.Tabela_Materias.Size = new System.Drawing.Size(689, 246);
-            this.Tabela_Materias.TabIndex = 6;
-            this.Tabela_Materias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabela_Materias_CellContentClick);
+            this.Verificacao_explic.AllowUserToAddRows = false;
+            this.Verificacao_explic.AllowUserToDeleteRows = false;
+            this.Verificacao_explic.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Verificacao_explic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Verificacao_explic.Location = new System.Drawing.Point(417, 139);
+            this.Verificacao_explic.Name = "Verificacao_explic";
+            this.Verificacao_explic.ReadOnly = true;
+            this.Verificacao_explic.Size = new System.Drawing.Size(343, 171);
+            this.Verificacao_explic.TabIndex = 13;
             // 
-            // verificacao_contas
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(99, 78);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(64, 34);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 12;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
+            // 
+            // vericar2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Tabela_Materias);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.Verificacao_explic);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
-            this.Name = "verificacao_contas";
-            this.Text = "verificacao_contas";
+            this.Name = "vericar2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "verificar2";
+            this.Load += new System.EventHandler(this.verificar2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
@@ -308,8 +339,10 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Tabela_Materias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Verificacao_explic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -324,6 +357,8 @@ namespace H_Brains
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -331,7 +366,7 @@ namespace H_Brains
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView Tabela_Materias;
+        private System.Windows.Forms.DataGridView Verificacao_explic;
+        private System.Windows.Forms.PictureBox pictureBox14;
     }
 }

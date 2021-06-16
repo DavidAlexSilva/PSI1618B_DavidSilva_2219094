@@ -132,6 +132,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vericacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vericacao.Designer.cs">
+      <DependentUpon>vericacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verificar2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verificar2.Designer.cs">
+      <DependentUpon>verificar2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +189,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="vericacao.resx">
+      <DependentUpon>vericacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verificar2.resx">
+      <DependentUpon>verificar2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\Form2.datasource" />
     <None Include="Properties\DataSources\H_Brains.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\H_Brains.Properties.Settings.datasource" />

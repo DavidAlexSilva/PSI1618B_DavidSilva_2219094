@@ -31,6 +31,7 @@ namespace H_Brains
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,7 @@ namespace H_Brains
             this.label1 = new System.Windows.Forms.Label();
             this.Tabela_Materias = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -56,6 +58,7 @@ namespace H_Brains
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.pictureBox13);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
@@ -65,6 +68,19 @@ namespace H_Brains
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(93, 381);
             this.panel2.TabIndex = 1;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(12, 14);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 45);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 7;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox6
             // 
@@ -96,7 +112,7 @@ namespace H_Brains
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 65);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 75);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(64, 45);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -199,9 +215,11 @@ namespace H_Brains
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Escolha das Matérias";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -228,5 +246,6 @@ namespace H_Brains
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

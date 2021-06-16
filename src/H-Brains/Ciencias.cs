@@ -69,14 +69,22 @@ namespace H_Brains
                 cin.Load(reader);
 
             }
+
             foreach (DataRow dr in cin.Rows)
             {
 
                 textBox1.Text = dr["Texto"].ToString() + "\n";
+
+                foreach (DataRow row in cin.Rows)
+                {
+
+                    textBox1.Text = dr["Texto"].ToString() + "\n";
+
+                }
             }
         }
 
-        private void Form8_Load(object sender, EventArgs e)
+        private static void Form8_Load1(object sender, EventArgs e)
         {
             SqlConnection Cien = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
             Cien.Open();
@@ -96,6 +104,11 @@ namespace H_Brains
                 ci.Load(reader);
 
             }
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new vericacao().Show();
         }
     }
 }

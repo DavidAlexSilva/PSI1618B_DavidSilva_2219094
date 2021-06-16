@@ -89,5 +89,11 @@ namespace H_Brains
             textBox1.Text = ig.Rows[0]["Texto"].ToString();
 
         }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new vericacao().Show();
+        }
     }
 }
+

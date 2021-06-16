@@ -112,6 +112,10 @@ namespace H_Brains
         private void button2_Click(object sender, EventArgs e)
         {
 
+
+
+           
+
             SqlConnection Tare = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
             Tare.Open();
             SqlCommand ComPort = new SqlCommand();
@@ -120,16 +124,29 @@ namespace H_Brains
                                      select * from Tarefas
   where TarefaID=72";
             DataTable pt = new DataTable();
+
             using (SqlDataReader reader = ComPort.ExecuteReader())
             {
                 pt.Load(reader);
             }
             textBox1.Text = pt.Rows[0]["Texto"].ToString();
+
+            using (SqlDataReader reader=ComPort.ExecuteReader()) 
+            {
+                pt.Load(reader);
+            }
+             textBox1.Text=pt.Rows[0]["Texto"].ToString();
+
         }
 
         private void Form6_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new vericacao().Show();
         }
     }
 }

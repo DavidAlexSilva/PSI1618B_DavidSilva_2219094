@@ -34,6 +34,7 @@ namespace H_Brains
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,7 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -91,6 +93,7 @@ namespace H_Brains
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.pictureBox13);
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.pictureBox4);
@@ -100,6 +103,19 @@ namespace H_Brains
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(93, 390);
             this.panel2.TabIndex = 5;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 45);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 9;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox6
             // 
@@ -176,6 +192,7 @@ namespace H_Brains
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(97, 100);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -184,11 +201,11 @@ namespace H_Brains
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(627, 398);
+            this.button2.Location = new System.Drawing.Point(625, 398);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 33);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Enviar";
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Ver Tarefa";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -203,12 +220,14 @@ namespace H_Brains
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Matematica";
             this.Load += new System.EventHandler(this.Form7_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -233,5 +252,6 @@ namespace H_Brains
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

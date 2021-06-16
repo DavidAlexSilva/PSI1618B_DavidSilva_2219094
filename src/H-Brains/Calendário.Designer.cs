@@ -31,6 +31,7 @@ namespace H_Brains
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,6 +41,7 @@ namespace H_Brains
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -47,8 +49,8 @@ namespace H_Brains
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -57,12 +59,12 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +78,18 @@ namespace H_Brains
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 72);
             this.panel1.TabIndex = 5;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(723, 18);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(64, 34);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 9;
+            this.pictureBox12.TabStop = false;
             // 
             // label1
             // 
@@ -169,6 +183,7 @@ namespace H_Brains
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel3.Controls.Add(this.pictureBox13);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.pictureBox7);
             this.panel3.Controls.Add(this.pictureBox8);
@@ -178,6 +193,19 @@ namespace H_Brains
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(93, 378);
             this.panel3.TabIndex = 6;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(12, 6);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(64, 45);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 9;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox1
             // 
@@ -257,18 +285,6 @@ namespace H_Brains
             this.textBox1.Size = new System.Drawing.Size(236, 311);
             this.textBox1.TabIndex = 8;
             // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(723, 18);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(64, 34);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 9;
-            this.pictureBox12.TabStop = false;
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,9 +296,11 @@ namespace H_Brains
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendarização";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -291,12 +309,12 @@ namespace H_Brains
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,5 +340,6 @@ namespace H_Brains
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

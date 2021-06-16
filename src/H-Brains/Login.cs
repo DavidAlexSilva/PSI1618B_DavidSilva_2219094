@@ -36,6 +36,8 @@ namespace H_Brains
 
         private static SqlConnection dbo = new SqlConnection();
 
+        public string Utlizador { get; internal set; }
+
         private void Login_Load(object sender, EventArgs e)
         {
 
@@ -48,9 +50,9 @@ namespace H_Brains
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            /*textBox1.Text = "";
             textBox1.PasswordChar = '*';
-            textBox1.MaxLength = 10;
+            textBox1.MaxLength = 10;/*
            
         } 
         
@@ -58,62 +60,61 @@ namespace H_Brains
         
         
 
-        private void button1_Click(object sender, EventArgs e) 
+      private void button1_Click(object sender, EventArgs e) 
         {
-            SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            /*SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
             Conn.Open();
-            SqlCommand Comando = new SqlCommand();
-            Comando.Connection = Conn;
-            Comando.CommandText = @"
+            SqlCommand Result = new SqlCommand();
+            Result.Connection = Conn;
+            Result.CommandText = @"
                 select * from Login
                 where log=@username and pass=@pass
                 ";
-            Comando.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
-            Comando.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
-            int result=Comando.ExecuteNonQuery();
-            if (result == 0) 
-            {
-                MessageBox.Show("LOGIN INCORRETO");
-                return;
+            Result.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
+            Result.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
+            if (Result.ExecuteNonQuery() == 1) 
+             {
+                 MessageBox.Show("LOGIN INCORRETO");
+                 return;
+             }
+             else
+             {
+                 DialogResult = DialogResult.OK;
+
+             }
+
+             Conn.Close();
+             SqlConnection Conne = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+             Conne.Open();
+             SqlCommand Comand = new SqlCommand();
+             Comand.Connection = Conne;
+             Comand.CommandText = @"
+                 select * from Login
+                 where log=@username and pass=@pass
+                 ";
+             Comand.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
+             Comand.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
+             int Resul = Comand.ExecuteNonQuery();
+             if (Resul == 2)
+             {
+                 MessageBox.Show("LOGIN INCORRETO");
+                 return;
+
+             }
+             else
+             {
+                 DialogResult = DialogResult.OK;
+
+             }
+             Conne.Open();
+
+             */
             }
-            else
-            {
-                DialogResult = DialogResult.OK;
 
-            }
-
-            SqlConnection Conne = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
-            Conne.Open();
-            SqlCommand Comand = new SqlCommand();
-            Comand.Connection = Conne;
-            Comand.CommandText = @"
-                select * from Login
-                where log=@username and pass=@pass
-                ";
-            Comand.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
-            Comand.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
-            int Result = Comand.ExecuteNonQuery();
-            if (Result == 1)
-            {
-                MessageBox.Show("LOGIN INCORRETO");
-                return;
-
-            }
-            else
-            {
-                DialogResult = DialogResult.OK;
-
-            }
-
-
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            int res;
-            Application.EnableVisualStyles();
-            /*Application.SetCompatibleTextRenderingDefault();*/
+         private void pictureBox3_Click(object sender, EventArgs e)
+         {
+             int res;
+             Application.EnableVisualStyles();
             res = Convert.ToInt32(MessageBox.Show("Continuar","Mensagem",MessageBoxButtons.YesNo));
             
 
@@ -135,7 +136,7 @@ namespace H_Brains
              
             }
             Application.Exit();
-            
+         
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -150,6 +151,7 @@ namespace H_Brains
 
         private class MySqlCommand
         {
-        }
+     
     }
+}
 }

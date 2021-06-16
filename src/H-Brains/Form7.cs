@@ -53,7 +53,7 @@ namespace H_Brains
         {
             new Form12().Show();
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             SqlConnection MAT = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
             MAT.Open();
@@ -91,6 +91,27 @@ namespace H_Brains
             }
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection MAT = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            MAT.Open();
+            SqlCommand Comando = new SqlCommand();
+            Comando.Connection = MAT;
+            Comando.CommandText = @"select * from Tarefas
+  where TarefaID=73
+ ";
+            DataTable mats = new DataTable();
+            using (SqlDataReader reader = Comando.ExecuteReader())
+            {
+                mats.Load(reader);
+
+            }
+            textBox1.Text = mats.Rows[0]["Texto"].ToString();
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new vericacao().Show();
+        }
     }
 }

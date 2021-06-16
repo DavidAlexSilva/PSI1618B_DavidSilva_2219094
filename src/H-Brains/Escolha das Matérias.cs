@@ -83,6 +83,11 @@ INNER JOIN explicadores ON explicadores.PessoaId = Materias.ExplicadorID";
               dt.Load(reader);
             }
            Tabela_Materias.DataSource = dt;
-        } 
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            new vericacao().Show();
+        }
     }
 }
