@@ -62,7 +62,8 @@ namespace H_Brains
             this.button1.TabIndex = 0;
             this.button1.Text = "Entrar";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            Login login = this;
+            login.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -206,7 +207,12 @@ namespace H_Brains
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
         {
           
             new Form2().ShowDialog();  
