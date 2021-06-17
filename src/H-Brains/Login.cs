@@ -52,7 +52,7 @@ namespace H_Brains
         {
             /*textBox1.Text = "";
             textBox1.PasswordChar = '*';
-            textBox1.MaxLength = 10;/*
+            textBox1.MaxLength = 10;*/
            
         } 
         
@@ -62,7 +62,8 @@ namespace H_Brains
 
       private void button1_Click(object sender, EventArgs e) 
         {
-            /*SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
+            new Form2().ShowDialog();
+            SqlConnection Conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Hbrains"].ConnectionString);
             Conn.Open();
             SqlCommand Result = new SqlCommand();
             Result.Connection = Conn;
@@ -71,8 +72,9 @@ namespace H_Brains
                 where log=@username and pass=@pass
                 ";
             Result.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
-            Result.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
-            if (Result.ExecuteNonQuery() == 1) 
+            Result.Parameters.Add("@pass", SqlDbType.VarChar).Value = Convert.ToInt32(Password.Text);
+            int Resul = Result.ExecuteNonQuery();
+            if (Resul == 0) 
              {
                  MessageBox.Show("LOGIN INCORRETO");
                  return;
@@ -93,9 +95,9 @@ namespace H_Brains
                  where log=@username and pass=@pass
                  ";
              Comand.Parameters.Add("@username", SqlDbType.VarChar).Value = Utilizador.Text;
-             Comand.Parameters.Add("@pass", SqlDbType.Int).Value = Password.Text;
-             int Resul = Comand.ExecuteNonQuery();
-             if (Resul == 2)
+             Comand.Parameters.Add("@pass", SqlDbType.Int).Value = Convert.ToInt32(Password.Text);
+             int resul = Comand.ExecuteNonQuery();
+             if (resul == 1)
              {
                  MessageBox.Show("LOGIN INCORRETO");
                  return;
@@ -108,7 +110,7 @@ namespace H_Brains
              }
              Conne.Open();
 
-             */
+             
             }
 
          private void pictureBox3_Click(object sender, EventArgs e)
@@ -151,7 +153,8 @@ namespace H_Brains
 
         private class MySqlCommand
         {
+
      
-    }
+       }
 }
 }

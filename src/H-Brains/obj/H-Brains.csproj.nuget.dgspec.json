@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Utilizador\\source\\repos\\DavidAlexSilva\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj": {}
+    "C:\\Users\\2219094\\Documents\\GitHub\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Utilizador\\source\\repos\\DavidAlexSilva\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj": {
+    "C:\\Users\\2219094\\Documents\\GitHub\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Utilizador\\source\\repos\\DavidAlexSilva\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj",
+        "projectUniqueName": "C:\\Users\\2219094\\Documents\\GitHub\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj",
         "projectName": "H-Brains",
-        "projectPath": "C:\\Users\\Utilizador\\source\\repos\\DavidAlexSilva\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj",
-        "packagesPath": "C:\\Users\\Utilizador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Utilizador\\source\\repos\\DavidAlexSilva\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\obj\\",
+        "projectPath": "C:\\Users\\2219094\\Documents\\GitHub\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\H-Brains.csproj",
+        "packagesPath": "C:\\Users\\2219094\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2219094\\Documents\\GitHub\\PSI1619I_DavidSilva_2219094\\src\\H-Brains\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Utilizador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2219094\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

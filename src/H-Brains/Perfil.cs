@@ -34,10 +34,7 @@ namespace H_Brains
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (new Login().Utlizador=="explicador") 
-            {
-                textBox1.Text = "e";
-            }
+           
         }
     }
 }
