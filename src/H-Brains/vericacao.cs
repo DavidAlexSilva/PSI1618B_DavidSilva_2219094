@@ -116,5 +116,10 @@ inner join alunos on Login.PessoaID=alunos.PessoaId
         {
              new vericar2().Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            new Form12().ShowDialog();
+        }
     }
 }

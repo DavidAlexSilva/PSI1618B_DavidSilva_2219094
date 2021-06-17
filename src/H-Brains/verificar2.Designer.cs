@@ -117,6 +117,7 @@ namespace H_Brains
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 5;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // panel2
             // 
@@ -187,7 +188,7 @@ namespace H_Brains
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MV Boli", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(111, 189);
+            this.label3.Location = new System.Drawing.Point(99, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(276, 62);
             this.label3.TabIndex = 14;
@@ -289,11 +290,12 @@ namespace H_Brains
             this.Verificacao_explic.AllowUserToDeleteRows = false;
             this.Verificacao_explic.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Verificacao_explic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Verificacao_explic.Location = new System.Drawing.Point(417, 139);
+            this.Verificacao_explic.Location = new System.Drawing.Point(393, 139);
             this.Verificacao_explic.Name = "Verificacao_explic";
             this.Verificacao_explic.ReadOnly = true;
-            this.Verificacao_explic.Size = new System.Drawing.Size(343, 171);
+            this.Verificacao_explic.Size = new System.Drawing.Size(396, 153);
             this.Verificacao_explic.TabIndex = 13;
+            this.Verificacao_explic.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Verificacao_explic_CellContentClick);
             // 
             // pictureBox14
             // 

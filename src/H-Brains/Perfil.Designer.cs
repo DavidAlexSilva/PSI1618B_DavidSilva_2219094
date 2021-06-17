@@ -34,6 +34,9 @@ namespace H_Brains
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Morada = new System.Windows.Forms.Button();
+            this.Apelido = new System.Windows.Forms.Button();
+            this.utilizador = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -92,6 +95,9 @@ namespace H_Brains
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.Morada);
+            this.panel2.Controls.Add(this.Apelido);
+            this.panel2.Controls.Add(this.utilizador);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.pictureBox5);
             this.panel2.Controls.Add(this.textBox3);
@@ -108,6 +114,36 @@ namespace H_Brains
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(703, 451);
             this.panel2.TabIndex = 6;
+            // 
+            // Morada
+            // 
+            this.Morada.Location = new System.Drawing.Point(400, 318);
+            this.Morada.Name = "Morada";
+            this.Morada.Size = new System.Drawing.Size(75, 23);
+            this.Morada.TabIndex = 20;
+            this.Morada.Text = "Morada";
+            this.Morada.UseVisualStyleBackColor = true;
+            this.Morada.Click += new System.EventHandler(this.Morada_Click);
+            // 
+            // Apelido
+            // 
+            this.Apelido.Location = new System.Drawing.Point(399, 249);
+            this.Apelido.Name = "Apelido";
+            this.Apelido.Size = new System.Drawing.Size(75, 23);
+            this.Apelido.TabIndex = 19;
+            this.Apelido.Text = "Apelido";
+            this.Apelido.UseVisualStyleBackColor = true;
+            this.Apelido.Click += new System.EventHandler(this.Apelido_Click);
+            // 
+            // utilizador
+            // 
+            this.utilizador.Location = new System.Drawing.Point(400, 193);
+            this.utilizador.Name = "utilizador";
+            this.utilizador.Size = new System.Drawing.Size(75, 23);
+            this.utilizador.TabIndex = 18;
+            this.utilizador.Text = "Nome";
+            this.utilizador.UseVisualStyleBackColor = true;
+            this.utilizador.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -136,6 +172,7 @@ namespace H_Brains
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(275, 25);
             this.textBox3.TabIndex = 14;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -144,6 +181,7 @@ namespace H_Brains
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(275, 25);
             this.textBox2.TabIndex = 13;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -236,6 +274,7 @@ namespace H_Brains
             this.Name = "Form12";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form12";
+            this.Load += new System.EventHandler(this.Form12_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -265,5 +304,8 @@ namespace H_Brains
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button utilizador;
+        private System.Windows.Forms.Button Morada;
+        private System.Windows.Forms.Button Apelido;
     }
 }

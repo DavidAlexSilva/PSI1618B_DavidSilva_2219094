@@ -78,5 +78,15 @@ inner join explicadores on Login.PessoaID=explicadores.PessoaId
         {
             Application.Exit();
         }
+
+        private void Verificacao_explic_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            new Form12().ShowDialog();
+        }
     }
 }

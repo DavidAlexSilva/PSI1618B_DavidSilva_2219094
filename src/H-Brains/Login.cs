@@ -50,9 +50,9 @@ namespace H_Brains
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            /*textBox1.Text = "";
+            textBox1.Text = "";
             textBox1.PasswordChar = '*';
-            textBox1.MaxLength = 10;*/
+            textBox1.MaxLength = 10;
            
         } 
         

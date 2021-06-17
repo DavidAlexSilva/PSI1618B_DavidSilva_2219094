@@ -105,6 +105,7 @@ namespace H_Brains
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // panel2
             // 
@@ -200,7 +201,7 @@ namespace H_Brains
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(122, 232);
+            this.label2.Location = new System.Drawing.Point(101, 232);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(276, 62);
             this.label2.TabIndex = 11;
@@ -214,10 +215,10 @@ namespace H_Brains
             this.Verificacao.AllowUserToDeleteRows = false;
             this.Verificacao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Verificacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Verificacao.Location = new System.Drawing.Point(417, 184);
+            this.Verificacao.Location = new System.Drawing.Point(383, 184);
             this.Verificacao.Name = "Verificacao";
             this.Verificacao.ReadOnly = true;
-            this.Verificacao.Size = new System.Drawing.Size(376, 166);
+            this.Verificacao.Size = new System.Drawing.Size(410, 154);
             this.Verificacao.TabIndex = 16;
             // 
             // pictureBox7
