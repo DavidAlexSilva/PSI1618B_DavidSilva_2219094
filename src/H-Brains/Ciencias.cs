@@ -62,7 +62,7 @@ namespace H_Brains
             SqlCommand Comando = new SqlCommand();
             Comando.Connection = CN;
             Comando.CommandText = @"   select * from Tarefas
-  where MateriaId=27";
+  where TarefaID=68";
             DataTable cin = new DataTable();
             using (SqlDataReader reader = Comando.ExecuteReader())
             {
